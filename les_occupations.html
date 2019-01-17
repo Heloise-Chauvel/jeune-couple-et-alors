@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head> <!--Début du head-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>Les occupations</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Début du script canvas-->     
+        <script> 
+            function init() {
+
+              var canvas = document.getElementById("logo_canvas");
+              var ctx = canvas.getContext("2d");
+
+              draw(ctx);
+
+              if (!context.setLineDash) {
+            context.setLineDash = function () {}
+        }
+            }
+
+            function draw(ctx) {
+
+              ctx.save(); //garder les fonctionnalités par défaut
+
+              // Polygone
+              ctx.beginPath();
+              ctx.moveTo(307.9, 71.4);
+              ctx.lineTo(279.8, 147.7);
+              ctx.lineTo(199.6, 161.6);
+              ctx.lineTo(147.5, 99.1);
+              ctx.lineTo(175.6, 22.7);
+              ctx.lineTo(255.8, 8.8);
+              ctx.lineTo(307.9, 71.4);
+              ctx.closePath();
+              ctx.fillStyle = "rgb(216, 255, 22)";
+              ctx.fill();
+
+              // Texte : JEUNE COUPLE
+              ctx.font = "12.1px fontLogo1";
+              ctx.fillStyle = "#000";
+              ctx.fillText("JEUNE COUPLE", 161.6, 82.8);
+
+              // Texte : ET ALORS 
+              ctx.font = "22.5px fontLogo2";
+              ctx.fillStyle = "#000";
+              ctx.fillText("ET ALORS !", 198.0, 101.9);
+
+              // Ligne 1 gauche noire
+              ctx.beginPath();
+              ctx.setLineDash([3.2,1]);
+              ctx.moveTo(190.9, 93.4);
+              ctx.lineTo(161.6, 93.4);
+              ctx.fillStyle = "#000";
+              ctx.fill();
+              ctx.lineWidth = 0.5;
+              ctx.stroke();      
+
+              // Ligne 2 droite noire
+              ctx.beginPath();
+              ctx.moveTo(292.4, 73.7);
+              ctx.lineTo(251.8, 73.7);
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore(); // Restaurer les default solid line
+
+              // Ligne 3 gauche blanche
+              ctx.beginPath();
+              ctx.moveTo(190.8, 96.2);
+              ctx.lineTo(162.4, 96.2);
+              ctx.closePath();        
+              ctx.fillStyle = "#fff";
+              ctx.fill();
+              ctx.strokeStyle = "#fff";
+              ctx.stroke();
+
+              // Ligne 4 droite blanche
+              ctx.beginPath();
+              ctx.moveTo(291.7, 76.5);
+              ctx.lineTo(252.6, 76.5);
+              ctx.closePath();
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore();
+            }
+        </script>
+<!--Fin du script canvas-->
+    </head> <!--Fin du head-->
+    
+    <body onload="init();"> <!--Début du body-->
+        <header> <!--Début du header-->
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle"></label>
+            <!--<p id="burger" class="burger"></p>-->
+            
+            <nav>
+                <ul>
+                    <li><a href="les_parents.html">Les parents</a></li>
+                    <li><a href="les_occupations.html">Les occupations</a></li>
+                    <li><a href="les_problemes.html">Les problèmes</a></li>
+                    <li><a href="les_engagements.html">Les engagements</a></li>
+                    <li><a href="contact.html">A propos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="safari_only">
+                <a href="index.html"><canvas id="logo_canvas" class="comp_navigateurs" width="413" height="394">Logo</canvas></a>
+
+
+                <!--Une version du canvas pour les version d'IE antérieures à IE10 - puisque IE10 et IE11 ne sont plus pris en charge par les commentaires conditionnels-->   
+                <!--[if IE]>
+                <script type= "text/javascript" src= "js/logo_canvasIE.js"></script>
+                  <canvas id="logo_canvasIE" width="413" height="394">Logo</canvas>  
+                <![endif]-->     
+                </div>  
+        </header> <!--Fin du header-->
+        
+        <main> <!--Début du main-->
+            <section class="sectionprt">
+                <img src="images/visuel4.png" alt="Les parents"/>
+                <h1>Les occupations</h1>
+            </section>
+            
+            <section class="sectionprt sectionoqp">
+                <h2>Les jeux qui rapprochent</h2>
+                <article>
+                    <p>Dans l’article précédent je vous ai donné des idées d’occupations qui ne demandent pas beaucoup de matériel sans pour autant diminuer le plaisir qu’elles peuvent procurer. Si comme moi vous avez eu l’occasion d’expérimenter ces activités, vous vous rendrez compte qu’elles permettent de se divertir mais aussi de se connaître. Dans cet article j’ai voulu alors cette fois-ci vous proposer des jeux qui auraient pour but premier de rapprocher votre couple, d’apprendre à vous connaître mutuellement et qui auraient pour effet collatéral le divertissement, et non pas le contraire. J’ai trouvé ce sujet intéressant car créer de la complicité au sein du couple est fondamental.</p>
+                    
+                    <ol>
+                        <li>Faire des « bêtises » ensemble
+                            <p>Donnez-vous des gages ensemble, chez vous, en public, avec vos amis, peu importe. Inventez-vous des codes entre vous, des gestes, des phrases codées, des signaux, bref tout ce qui pourra faire de vous une équipe inséparable <strong class="exclamation_point">!</strong> Des exemples de ce que vous pourriez faire ? Tout dépend de jusqu’où vous voulez allez et des valeurs que vous avez, en tout cas le principal c’est que vous vous lâchiez tous les deux en utilisant des codes que seuls vous connaissez. Vous pouvez partir sur de simples défis, pendant une partie de carte celui qui perd devra faire le ménage pendant une semaine par exemple, puis ensuite faire des choses plus améliorées comme aller parler à des inconnus et se joindre à eux en parlant d’un sujet précis, se faire passer pour un étranger, faire une interview en se faisant passer pour un étudiant en psychologie, bref laissez parler votre imagination <strong class="exclamation_point">!</strong></p>
+                        </li>
+                        <li>Faire des quizz de connaissance
+                            <p>Vous trouverez de nombreux quizz sur le web qui permettent de savoir si vous connaissez votre partenaire. Pris à la rigolade ou non ces tests peuvent s’avérer très prenants et nous révèlent beaucoup de choses sur l’autre. Vous pouvez en trouver des tout prêts mais aussi les élaborer vous-mêmes et les compléter ensemble ou chacun de votre côté en essayant de deviner les réponses de l’autre.</p>
+                        </li>
+                        <li>Oser les jeux coquins <strong class="exclamation_point">!</strong>
+                            <p>Toujours faire l’amour sur un lit avec les mêmes positions ben il ne faut se le cacher ça devient ennuyant… Vous n’êtes obligés de passer aux sextoys tout de suite mais vous pouvez au moins pimenter les câlins avec des petites idées toutes simples : foulard, bougies, chantilly, fraises, huiles de massage, musique, douche, canapé, matières douces, etc… Cela peut être interprété comme un jeu entre vous, et vous pouvez d’ailleurs intégrer cela aux gages dont je parlais plus haut.</p>
+                        </li>
+                    </ol>
+                       
+                </article>
+            </section>
+            
+            <section class="sectionprt sectionoqp">
+                <h2>Quand on n’a rien sous la main</h2>
+                <article>
+                    <p>Vous êtes tous les deux dans l’appart, contents de vous voir et heureux de partager des moments ensemble. Sauf que ces moments vous les trouvez un peu fades… Regarder un film ? Vous l’avez déjà fait des centaines de fois… Se balader dans le centre-ville ? C’est toujours la même chose… Mais alors qu’est-ce que vous pourriez bien faire tous les deux sans forcément dépenser une fortune (oui en général quand on est jeune et en couple, le budget est réduit) ? C’est à cette question que je tenterai de répondre dans cet article, car moi aussi j’ai été confrontée à cette problématique.</p>
+                    
+                    <ol>
+                        <li>La cuisine
+                            <p>Voilà un thème parfait <strong class="exclamation_point">!</strong> Une idée d’occupation intéressante et pleine de possibilités qui en plus est très utile. Parce qu’il faut l’admettre, les pizzas tous les jours au bout d’un moment c’est lassant… Alors voilà l’idée c’est que vous preniez du plaisir tous les deux à créer des plats et des desserts. On oublie les pâtes, le riz et les plats congelés, au programme des plats élaborés qui demandent de la préparation. Inspirez-vous de tutos, de livres ou d’émissions, l’objectif c’est de se faire plaisir à la fois dans la préparation et dans la dégustation. Si l’idée vous paraît bizarre pensez à ces gens qui payent pour faire de la cuisine avec des chefs ou même à vous en train de regarder Masterchef (vous regardez des gens faire à manger, pourquoi vous ne le feriez pas vous-même ?).</p>
+                        </li>
+                        <li>Le sport
+                            <p>Ce n’est pas parce que vous êtes en couple que vous devez vous laissez aller <strong class="exclamation_point">!</strong> Prendre soin de soi ensemble c’est toujours plus motivant que tout seul, en plus à deux on peut varier les exercices. De nombreuses vidéos de couple ou d’amis qui ont pris cette décision pourront vous inspirer. Ce que personnellement j’aime dans cette idée c’est que l’on est plus spectateur du changement des autres en train de jalouser leur corps parfait, on devient l’acteur de son propre changement corporel sans que notre partenaire se sente abandonné puisque lui aussi obtient ce corps de mannequin que tout le monde envie <strong class="exclamation_point">!</strong> Question budget pas besoin d’aller forcément dans une salle de sport aux forfaits exorbitants, vous pouvez vous retrouvez chez vous, dans un parc ou même faire ce que l’on appelle du « street workout » (entrainement dans la rue, en utilisant les infrastructures urbaines comme équipement). En plus, si vous êtes étudiants et que vous souhaitez vraiment avoir du matériel professionnel à votre disposition vous pouvez vous renseigner auprès de votre université, en général ils disposent d’une petite salle de sport tout à fait abordable. Les salles de sport de votre ville proposent aussi généralement une première séance d’essai gratuite, en faisant du porte à porte vous pourrez donc réussir à passer une semaine avec des équipements professionnels sans dépenser un rond, ça peut être une opportunité.</p>
+                        </li>
+                        <li>Les sorties en plein air
+                            <p>Mine de rien les pique-niques et les randonnées ne demandent pas beaucoup de préparation et sont source de beaucoup de plaisir. En plus quand on fait ça on se sent adulte et ça nous donne une sorte de satisfaction personnelle très agréable… (t’as vu maman ? Je ne suis plus un bébé <strong class="exclamation_point">!</strong>). Vous pouvez décider de rester près de chez vous ou alors de prendre le bus ou la voiture (la vôtre ou par covoiturage) pour vous enfoncer un peu plus loin dans la région. Si vous avez l’esprit aventurier et que vous trouvez la possibilité de louer ou d’acheter une tente vous pouvez également décider de passer une nuit dehors.</p>
+                        </li>
+                    </ol>
+                    
+                </article>
+            </section>
+        </main> <!--Fin du main-->
+    </body>
+</html>

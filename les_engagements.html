@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head> <!--Début du head-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>Les engagements</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Début du script canvas-->     
+        <script> 
+            function init() {
+
+              var canvas = document.getElementById("logo_canvas");
+              var ctx = canvas.getContext("2d");
+
+              draw(ctx);
+
+              if (!context.setLineDash) {
+            context.setLineDash = function () {}
+        }
+            }
+
+            function draw(ctx) {
+
+              ctx.save(); //garder les fonctionnalités par défaut
+
+              // Polygone
+              ctx.beginPath();
+              ctx.moveTo(307.9, 71.4);
+              ctx.lineTo(279.8, 147.7);
+              ctx.lineTo(199.6, 161.6);
+              ctx.lineTo(147.5, 99.1);
+              ctx.lineTo(175.6, 22.7);
+              ctx.lineTo(255.8, 8.8);
+              ctx.lineTo(307.9, 71.4);
+              ctx.closePath();
+              ctx.fillStyle = "rgb(216, 255, 22)";
+              ctx.fill();
+
+              // Texte : JEUNE COUPLE
+              ctx.font = "12.1px fontLogo1";
+              ctx.fillStyle = "#000";
+              ctx.fillText("JEUNE COUPLE", 161.6, 82.8);
+
+              // Texte : ET ALORS 
+              ctx.font = "22.5px fontLogo2";
+              ctx.fillStyle = "#000";
+              ctx.fillText("ET ALORS !", 198.0, 101.9);
+
+              // Ligne 1 gauche noire
+              ctx.beginPath();
+              ctx.setLineDash([3.2,1]);
+              ctx.moveTo(190.9, 93.4);
+              ctx.lineTo(161.6, 93.4);
+              ctx.fillStyle = "#000";
+              ctx.fill();
+              ctx.lineWidth = 0.5;
+              ctx.stroke();      
+
+              // Ligne 2 droite noire
+              ctx.beginPath();
+              ctx.moveTo(292.4, 73.7);
+              ctx.lineTo(251.8, 73.7);
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore(); // Restaurer les default solid line
+
+              // Ligne 3 gauche blanche
+              ctx.beginPath();
+              ctx.moveTo(190.8, 96.2);
+              ctx.lineTo(162.4, 96.2);
+              ctx.closePath();        
+              ctx.fillStyle = "#fff";
+              ctx.fill();
+              ctx.strokeStyle = "#fff";
+              ctx.stroke();
+
+              // Ligne 4 droite blanche
+              ctx.beginPath();
+              ctx.moveTo(291.7, 76.5);
+              ctx.lineTo(252.6, 76.5);
+              ctx.closePath();
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore();
+            }
+        </script>
+<!--Fin du script canvas-->
+    </head> <!--Fin du head-->
+    
+    <body onload="init();"> <!--Début du body-->
+        <header> <!--Début du header-->
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle"></label>
+            <!--<p id="burger" class="burger"></p>-->
+            
+            <nav>
+                <ul>
+                    <li><a href="les_parents.html">Les parents</a></li>
+                    <li><a href="les_occupations.html">Les occupations</a></li>
+                    <li><a href="les_problemes.html">Les problèmes</a></li>
+                    <li><a href="les_engagements.html">Les engagements</a></li>
+                    <li><a href="contact.html">A propos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="safari_only">
+                <a href="index.html"><canvas id="logo_canvas" class="comp_navigateurs" width="413" height="394">Logo</canvas></a>
+
+
+                <!--Une version du canvas pour les version d'IE antérieures à IE10 - puisque IE10 et IE11 ne sont plus pris en charge par les commentaires conditionnels-->   
+                <!--[if IE]>
+                <script type= "text/javascript" src= "js/logo_canvasIE.js"></script>
+                  <canvas id="logo_canvasIE" width="413" height="394">Logo</canvas>  
+                <![endif]-->     
+                </div>  
+        </header> <!--Fin du header-->
+        
+        <main> <!--Début du main-->
+            <section class="sectionprt">
+                <img src="images/visuel6.png" alt="Les engagements"/>
+                <h1>Les engagements</h1>
+            </section>
+            
+            <section class="sectionprt sectioneg">
+                <h2>J'ai peur de lui demander, comment faire ?</h2>
+                <article>
+                    <p>Ça vous trotte dans la tête… Vous aimeriez lui annoncer qu’il/elle compte pour vous à un tel point que vous souhaitez vous engager d’une manière ou d’une autre. Mais vous appréhendez… Bien-sûr que ce n’est pas évident, ce n’est pas parce que vous n’osez pas que votre couple n’est pas solide, ça arrive à tout le monde, surtout si vous êtes de nature timide. Voici donc quelques conseils qui vous permettront de prendre sur vous pour lui annoncer.</p>
+                    
+                    <ol>
+                        <li>Soyez sûr(e) de ce que vous allez lui annoncer
+                            <p>Vous y avez bien réfléchi ? Vous avez lu mon article « Est-ce le bon moment » ? Vous savez à peu près quelles répercussions il pourrait y avoir ? Si vous avez répondu oui à ces questions c’est que votre choix est réfléchi et que vous pouvez lui annoncer, sinon essayez de vous poser un peu plus avec vous-même pour éclaircir votre opinion sur le sujet.</p>
+                        </li>
+                        <li>Préparez le terrain
+                            <p>Je pense qu’il serait une mauvaise idée de lui annoncer de but en blanc comme ça comme on le fait parfois lorsqu’on a peur. Vous savez lorsque vous avez peur de plonger du haut de la piscine parce que c’est haut et que vous vous dites « bon de toute façon que ce soit maintenant ou tout à l’heure, c’est pareil, allez je me lance » en fermant les yeux et en sautant… Et ben c’est précisément ça qu’il ne faut pas faire <strong class="exclamation_point">!</strong> Avec votre conjoint vous devez choisir un bon moment. Essayez de choisir un moment où il est calme et reposé. Vous n’êtes pas obligé de sortir les chandelles et le canard laqué, au contraire ça vous stressera encore plus, mais vous pouvez par exemple choisir de lui dire pendant les vacances un jour où ne faites rien de spécial mais où vous vous sentez bien. Après tout si vous avez un peu peur c’est peut-être que vous ne savez pas comment il/elle va réagir, il vaut mieux donc choisir un moment approprié pour avouer tout ça <strong class="exclamation_point">!</strong></p>
+                        </li>
+                        <li>Faites preuve de tact, beaucoup de tact
+                            <p>Mettez-vous à sa place : ce n’est peut-être pas évident pour lui/elle d’entendre ça, peut-être que vous n’êtes pas sur la même longueur d’onde de ce point de vue là… Alors ménagez le/la. Une petite astuce qui marche bien pour moi e d’essayer de ne pas imaginer sa réaction car mine de rien quand on se fait des scénarii on a tendance à adapter son discours alors que si ça se trouve sa pensée est totalement différente. En bref, essayez de rester neutre comme si vous parliez du point de vue de quelqu’un d’autre que vous. </p>
+                        </li>                        
+                    </ol>
+                    
+                </article>
+            </section>
+            
+            <section class="sectionprt sectioneg">
+                <h2>Est-ce le bon moment ?</h2>
+                <article>
+                    <p>Vous avez des rêves plein les yeux, vous vous voyez aller loin avec lui/elle. Peu importe les projets que vous envisagez, ils impliquent que votre partenaire soit quelqu’un de confiance sur qui vous pouvez compter. Je dirais qu’évaluer la capacité à évaluer la fiabilité de notre amoureux(se) lorsqu’on est jeune est plus réduite que lorsque l’on atteint la quarantaine par exemple car on a vécu moins de choses. Toutefois à mon avis ce n’est pas pour autant qu’il faut non plus être trop prudent, de toute façon il nous faut faire des expériences pour comprendre, et puis on peut regretter de ne pas avoir su si c’était une bonne idée ou non si l’on renonce à l’engagement. Mon message est donc d’écouter son cœur mais d’essayer de choisir le bon moment. « Oui mais comment ? » me direz-vous, c’est justement à cette question que je tenterai de répondre ici.</p>                    
+                    <ol>
+                        <li>Emménager ensemble
+                        <p>Généralement il s’agit de la première étape. Pour être sûr(e) qu’il s’agit du bon moment apprenez déjà à le connaître, prenez au moins 6 mois. Puis si au bout de cette période vous réussissez à vous entendre malgré les conflits et la différence de caractère alors songez aux détails plus pratiques de la chose : pourrez-vous gérer vos deux vies dans un même logement ? Y a-t-il possibilité de choisir un endroit qui vous de faire vos activités chacun de votre côté ? Aurez-vous le budget pour payer le loyer ? Les parents chercheront-ils à vous mettre des bâtons dans les roues ou au contraire de vous aider ?</p>
+                        </li>
+                        <li>Acheter une maison
+                        <p>A part si vous avez les moyens de vous acheter une maison cash, il vous faudra recourir au crédit comme des milliers de Français le font chaque année. Or pour obtenir un crédit il faut avoir des revenus fixes, je vous conseille donc de ne penser à cela que lorsque vous aurez tous les deux un emploi. Après il faut absolument se renseigner auprès de ceux qui ont déjà fait ces mêmes démarches, les arnaques se font de plus en plus fréquentes… Ensuite, ne soyez pas pressés, un achat aussi important demande du temps, que ce soit du temps de réflexion, de prise d’information ou de démarches administratives. Je vous conseille également d’envisager l’achat uniquement lorsque vous disposerez d’un petit capital personnel (au moins 10 000 €), ça sera plus imple pour le crédit et en cas de coup dur.</p>
+                        </li>
+                        <li>Se marier
+                        <p>Ah la robe de mariée, le gâteau de mariage et la réunion de famille… Certains en ont envie et d’autres pas du tout. Avant d’imaginer quoi que ce soit tâtez le terrain avec beaucoup de tact pour savoir si votre compagnon ou compagne songe à cela (pour en savoir plus vous pourrez consulter l’article « J’ai peur de lui demander, comment faire ? »). Sachez également que le mariage n’est pas qu’un acte scellant votre amour, c’est également un contrat qui vous lie juridiquement, il est donc important que vous vous renseigniez en amont sur ce qu’implique cet acte civil, il se peut que les conditions vous paraissent beaucoup moins féériques tout d’un coup… Sinon, sachez également que vous n’êtes pas obligés de faire une grande cérémonie, vous êtes même libres de ne pas en faire et d’aller à la mairie uniquement avec vos alliances et vos deux témoins respectifs. Néanmoins si cela vous tient à cœur vous devrez prévoir au moins un an d’organisation.</p>
+                        </li>
+                        <li>Avoir des enfants
+                        <p>Alors là prudence. A part dans certaines situations délicates, je vous conseillerai toujours de ne pas garder un enfant dont vous n’avez pas décidé la venue… C’est un accident ? D’accord ça arrive, mais si vous n’êtes pas prêts à l’accueillir, préférez reporter sa venue. Je comprends bien qu’un avortement est un acte douloureux, mais pensez avant tout à lui et pas à vous. Un enfant doit venir dans le meilleur des cadres possible. De même un enfant ne doit en aucun cas être fait pour « renforcer » la relation, non seulement c’est abominable de se servir de quelqu’un d’innocent pour régler des choses qui ne concernent que deux personnes, mais en plus de toute façon ça ne marchera pas <strong class="exclamation_point">!</strong> Pour avoir un enfant il faut que le couple soit soudé comme jamais car nerveusement cela vous demandera beaucoup… Mais vraiment beaucoup <strong class="exclamation_point">!</strong> Et les filles par pitié, ne cachez pas votre grossesse à votre copain, évidemment que c’est votre corps et que vous en faites ce que vous voulez même s’il n’est pas d’accord, mais rappelez-vous que vous n’avez pas fait cet enfant seule, s’il n’a pas le droit de vous obliger à avorter ou à le garder, il a le droit de savoir.</p>
+                        </li>
+                    </ol>                    
+                    
+                </article>
+            </section>
+                        
+        </main> <!--Fin du main-->
+    </body>
+</html>

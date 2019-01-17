@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!-- Created with Ai->Canvas Export Plug-In Version 1.2 (PC/64) -->
+<!-- By Mike Swanson (http://blog.mikeswanson.com/)             -->
+
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <title>canvas_mobile</title>
+  <script>
+
+    function init() {
+
+      var canvas = document.getElementById("canvas");
+      var ctx = canvas.getContext("2d");
+
+      draw(ctx);
+    }
+
+    function draw(ctx) {
+
+      // mobile/Repre
+      ctx.save();
+
+      // mobile/Rectangle
+      ctx.beginPath();
+      ctx.moveTo(460.4, 167.5);
+      ctx.lineTo(0.5, 167.5);
+      ctx.lineTo(0.5, 0.5);
+      ctx.lineTo(460.4, 0.5);
+      ctx.lineTo(460.4, 167.5);
+      ctx.closePath();
+      ctx.fillStyle = "rgb(255, 255, 255)";
+      ctx.fill();
+      ctx.strokeStyle = "rgb(255, 255, 255)";
+      ctx.stroke();
+
+      // mobile/Trac
+      ctx.beginPath();
+      ctx.moveTo(307.9, 71.4);
+      ctx.lineTo(279.8, 147.7);
+      ctx.lineTo(199.6, 161.6);
+      ctx.lineTo(147.5, 99.1);
+      ctx.lineTo(175.6, 22.7);
+      ctx.lineTo(255.8, 8.8);
+      ctx.lineTo(307.9, 71.4);
+      ctx.closePath();
+      ctx.fillStyle = "rgb(216, 255, 22)";
+      ctx.fill();
+
+      // mobile/JEUNE COUPLE
+      ctx.font = "Medium 12.1px 'LetsGo'";
+      ctx.fillStyle = "rgb(0, 0, 0)";
+      ctx.fillText("JEUNE COUPLE", 161.6, 82.8);
+
+      // mobile/et alors 
+      ctx.font = "22.5px 'Craze One's first font UPPER SK'";
+      ctx.fillStyle = "rgb(34, 30, 31)";
+      ctx.fillText("et alors !", 198.0, 101.9);
+
+      // mobile/Graphe linaire
+      ctx.beginPath();
+      ctx.moveTo(190.9, 93.4);
+      ctx.lineTo(161.6, 93.4);
+      ctx.fillStyle = "rgb(108, 110, 113)";
+      ctx.fill();
+      ctx.lineWidth = 0.5;
+      ctx.strokeStyle = "rgb(134, 137, 141)";
+      ctx.stroke();
+
+      // mobile/Graphe linaire
+      ctx.beginPath();
+      ctx.moveTo(292.4, 73.7);
+      ctx.lineTo(251.8, 73.7);
+      ctx.fill();
+      ctx.stroke();
+
+      // mobile/Rectangle
+      ctx.beginPath();
+      ctx.moveTo(190.8, 96.2);
+      ctx.lineTo(162.4, 96.2);
+      ctx.bezierCurveTo(162.3, 96.2, 162.3, 96.2, 162.3, 96.1);
+      ctx.lineTo(162.3, 95.5);
+      ctx.bezierCurveTo(162.3, 95.5, 162.3, 95.5, 162.4, 95.5);
+      ctx.lineTo(190.8, 95.5);
+      ctx.bezierCurveTo(190.8, 95.5, 190.9, 95.5, 190.9, 95.5);
+      ctx.lineTo(190.9, 96.1);
+      ctx.bezierCurveTo(190.9, 96.2, 190.8, 96.2, 190.8, 96.2);
+      ctx.closePath();
+      ctx.fillStyle = "rgb(255, 255, 255)";
+      ctx.fill();
+
+      // mobile/Rectangle
+      ctx.beginPath();
+      ctx.moveTo(291.7, 76.5);
+      ctx.lineTo(252.6, 76.5);
+      ctx.bezierCurveTo(252.5, 76.5, 252.5, 76.5, 252.5, 76.4);
+      ctx.lineTo(252.5, 75.7);
+      ctx.bezierCurveTo(252.5, 75.7, 252.5, 75.6, 252.6, 75.6);
+      ctx.lineTo(291.7, 75.6);
+      ctx.bezierCurveTo(291.8, 75.6, 291.8, 75.7, 291.8, 75.7);
+      ctx.lineTo(291.8, 76.4);
+      ctx.bezierCurveTo(291.8, 76.5, 291.8, 76.5, 291.7, 76.5);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+  </script>
+ </head>
+ <body onload="init()">
+   <canvas id="canvas" width="461" height="168"></canvas>
+ </body>
+</html>

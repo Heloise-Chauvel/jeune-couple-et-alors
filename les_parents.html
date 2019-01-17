@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head> <!--Début du head-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>Les parents</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Début du script canvas-->     
+        <script> 
+            function init() {
+
+              var canvas = document.getElementById("logo_canvas");
+              var ctx = canvas.getContext("2d");
+
+              draw(ctx);
+
+              if (!context.setLineDash) {
+            context.setLineDash = function () {}
+        }
+            }
+
+            function draw(ctx) {
+
+              ctx.save(); //garder les fonctionnalités par défaut
+
+              // Polygone
+              ctx.beginPath();
+              ctx.moveTo(307.9, 71.4);
+              ctx.lineTo(279.8, 147.7);
+              ctx.lineTo(199.6, 161.6);
+              ctx.lineTo(147.5, 99.1);
+              ctx.lineTo(175.6, 22.7);
+              ctx.lineTo(255.8, 8.8);
+              ctx.lineTo(307.9, 71.4);
+              ctx.closePath();
+              ctx.fillStyle = "rgb(216, 255, 22)";
+              ctx.fill();
+
+              // Texte : JEUNE COUPLE
+              ctx.font = "12.1px fontLogo1";
+              ctx.fillStyle = "#000";
+              ctx.fillText("JEUNE COUPLE", 161.6, 82.8);
+
+              // Texte : ET ALORS 
+              ctx.font = "22.5px fontLogo2";
+              ctx.fillStyle = "#000";
+              ctx.fillText("ET ALORS !", 198.0, 101.9);
+
+              // Ligne 1 gauche noire
+              ctx.beginPath();
+              ctx.setLineDash([3.2,1]);
+              ctx.moveTo(190.9, 93.4);
+              ctx.lineTo(161.6, 93.4);
+              ctx.fillStyle = "#000";
+              ctx.fill();
+              ctx.lineWidth = 0.5;
+              ctx.stroke();      
+
+              // Ligne 2 droite noire
+              ctx.beginPath();
+              ctx.moveTo(292.4, 73.7);
+              ctx.lineTo(251.8, 73.7);
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore(); // Restaurer les default solid line
+
+              // Ligne 3 gauche blanche
+              ctx.beginPath();
+              ctx.moveTo(190.8, 96.2);
+              ctx.lineTo(162.4, 96.2);
+              ctx.closePath();        
+              ctx.fillStyle = "#fff";
+              ctx.fill();
+              ctx.strokeStyle = "#fff";
+              ctx.stroke();
+
+              // Ligne 4 droite blanche
+              ctx.beginPath();
+              ctx.moveTo(291.7, 76.5);
+              ctx.lineTo(252.6, 76.5);
+              ctx.closePath();
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore();
+            }
+        </script>
+<!--Fin du script canvas-->
+    </head> <!--Fin du head-->
+    
+    <body onload="init();"> <!--Début du body-->
+        <header> <!--Début du header-->
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle"></label>
+            <!--<p id="burger" class="burger"></p>-->
+            
+            <nav>
+                <ul>
+                    <li><a href="les_parents.html">Les parents</a></li>
+                    <li><a href="les_occupations.html">Les occupations</a></li>
+                    <li><a href="les_problemes.html">Les problèmes</a></li>
+                    <li><a href="les_engagements.html">Les engagements</a></li>
+                    <li><a href="contact.html">A propos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="safari_only">
+                <a href="index.html"><canvas id="logo_canvas" class="comp_navigateurs" width="413" height="394">Logo</canvas></a>
+
+
+                <!--Une version du canvas pour les version d'IE antérieures à IE10 - puisque IE10 et IE11 ne sont plus pris en charge par les commentaires conditionnels-->   
+                <!--[if IE]>
+                <script type= "text/javascript" src= "js/logo_canvasIE.js"></script>
+                  <canvas id="logo_canvasIE" width="413" height="394">Logo</canvas>  
+                <![endif]-->     
+                </div>  
+        </header> <!--Fin du header-->
+        
+        <main> <!--Début du main-->
+            <section class="sectionprt">
+                <img src="images/visuel3.png" alt="Les parents"/>
+                <h1>Les parents</h1>
+            </section>
+            
+            <section class="sectionprt">
+                <h2>Quand ils ne l'acceptent pas</h2>
+                <article>
+                    <p>Quelle que soit la raison, il arrive que votre moitié soit rejetée par vos parents. Son milieu social, sa couleur de peau, ses croyances religieuses, sa situation professionnelle, son âge, son sexe, … tout peut être prétexte au rejet. Cette situation n’est bien-sûr jamais facile et génère souvent de nombreux conflits. Pourtant il faut vivre avec, il faut alors trouvez le moyen de rester fort. Vous trouverez dans cet article quelques pistes pour vous aider à surmonter cette étape difficile.</p>
+                    
+                    <ol>
+                        <li>Ce n’est pas de votre faute
+                            <p>Surtout ne culpabilisez pas. Parfois on se dit de vilaines choses qui ressemblent à « tout de façon c’est de ma faute je n’aurais jamais dû me mettre avec lui/elle, je suis égoïste » ou encore « mes parents sont des gros c****, j’ai honte d’être leur enfant, j’aurais jamais dû être là ». Mettez un terme à ces pensées négatives, rien de bon en sortira. Qu’on soit bien clair : vous n’êtes pas coupables de ce qu’il se passe entre vos parents et votre petit(e)-ami(e). Si vraiment cela devient trop dur à porter pour vous n’hésitez-pas à consulter un psychologue (non vous n’êtes pas fou, tout le monde peut avoir besoin d’un psychologue à un moment donné de sa vie).</p>
+                        </li>
+                        <li>Essayez de comprendre l’origine du rejet
+                            <p>Maintenant que vous avez compris que cela ne vient pas de vous, essayez de comprendre d’où cela vient. Même si les relations sont tendues, allez voir vos parents. Posez-leur des questions. La communication est le remède de nombreux maux, peut-être qu’elle le sera dans votre situation. Pour que cela se passe bien tentez de rester neutre. Je vous l’accorde dans des situations comme celles-là on a qu’une envie c’est de s’énerver, mais même si à l’intérieur de vous ça bout, contenez au maximum cette rage : il est impossible de discuter en étant énervé.</p>
+                        </li>
+                        <li>Parlez-en à votre amoureux(se)
+                            <p>Demandez à votre partenaire son ressenti par rapport à cette situation. Rassurez-le en lui disant que ce n’est pas de sa faute. Il a son apparence, sa personnalité, il ne doit pas se changer pour vos parents. Chacun est unique et il se trouve que cette personne-là vous l’aimiez mais pas vos parents, ça arrive.  Il est important de lui parler de tout ça calmement, pour lui, pour vous, pour votre couple. Par contre il ne faut pas non plus remettre ce sujet tout le temps sur le tapis. Pensez à autre chose, parlez de vous, pas d’eux.</p>
+                        </li>
+                        <li>Parlez-en à une personne de confiance
+                            <p>Un oncle, une tante, un confident, si vous avez quelqu’un en qui vous pouvez avoir confiance, il serait bon de lui en parler. Une personne neutre est toujours la bienvenue dans ce genre de situations, elle vous permettra d’y porter un regard neuf. Par précaution prévenez votre chéri(e) avant de vous confier à ce sujet, sinon il/elle peut se sentir blessé(e) de ne pas avoir été mis au courant, après tout cette histoire le/la concerne tout autant que vous.</p>
+                        </li>
+                    </ol>
+                       
+                </article>
+            </section>
+            
+            <section class="sectionprt">
+                <h2>Les présentations</h2>
+                <article>
+                    <p>Vous le/la connaissez depuis déjà un petit moment, ça commence à devenir sérieux et vous pensez que ce n’est pas une relation comme les autres. Se pose alors la question de la présentation aux parents… C’est vrai après tout c’est comme ça que ça se passe : on flirte un peu et lorsqu’on sent que ça dure, ben on l’invite chez la famille. Oui sauf que vous vous en seriez bien passé… Que vous ayez ou non de bonnes relations avec votre famille c’est toujours un cap à passer et un stress supplémentaire. Alors deux solutions s’offrent à vous : soit vous décidez de ne pas être comme tout le monde et de ne jamais présenter votre âme sœur (un peu fou comme idée, je vous l’accorde, mais n’empêche que des fois on ne peut pas faire autrement), ou alors vous prenez votre courage à deux mains et vous organisez une petite réunion de famille (je sais, rien que de lire le mot « réunion » vous fait froid dans le dos).</p>
+                    <p>Dans cet article je vais tenter de donner des conseils à la partie d’entre vous qui souhaite franchir le pas, pour faire en sortes que ces présentations se déroulent au mieux (ou du moins limiter la casse).</p>
+                    
+                    <h3>Pour celui/celle qui va présenter</h3>
+                    
+                    <ul>
+                        <li>
+                            <h4>Avant la réunion de famille</h4>
+                    
+                            <ol>
+                                <li>Parlez de votre âme-sœur à vos parents et vice-versa
+                                    <p>Ça paraît bête mais c’est pourtant essentiel. Vous n’êtes pas forcément obligé de livrer tous les secrets de famille ou même de dévoiler toute la vie privée de votre partenaire mais vous pouvez par exemple parler de la situation professionnelle, des hobbies et des préférences, mine de rien cela peut s’avérer très pratique pour trouver des sujets de conversation si un gros blanc se présente dans la discussion. Attention tout de même si vous avez une famille ou un partenaire susceptible : prévenez-les avant de révéler des choses un peu trop intimes à leur sujet, ne créez pas déjà des conflits entre eux avant même qu’ils se voient <strong class="exclamation_point">!</strong></p>
+                                </li>
+                                <li>Rassurez votre partenaire
+                                    <p>Dites-lui que tout va bien se passer, mettez-le à l’aise. Expliquez comment votre famille fonctionne et comment cela peut tourner pour ne pas qu’il soit surpris. Dites-vous que si cette rencontre est impressionnante pour vous elle l’est encore plus pour votre moitié <strong class="exclamation_point">!</strong></p>
+                                </li>
+                            </ol>
+                       </li>
+                        
+                        <li> 
+                            <h4>Pendant la réunion de famile</h4>
+                            <ol>
+                                <li>Essayez de calmer le jeu
+                                    <p>Faites-en sortes d’éviter les conversations que vous savez gênantes. Vous pouvez par exemple changez de sujet subtilement, aller chercher des boissons, des amuse-gueules, des jeux… Bref tout ce qui peut éviter de faire paraître ce moment comme un interrogatoire. De plus, parlez autant à vos parents qu’à votre copain/copine, voyez-vous comme une sorte de médiateur entre deux parties qui doit détendre l’atmosphère.</p>
+                                </li>
+                                <li>Restez naturel(le)
+                                    <p>N’en faites pas trop, ça reste vos parents, ce ne sont pas des inconnus. Essayer d’agir comme vous le feriez d’habitude, et faites-en de même avec votre amoureux/se, plus l’on vous verra à l’aise mieux ça se passera parce que mine de rien c’est vous qui êtes lien entre eux et lui/elle.</p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                    
+                    <h3>Celui/celle qui va être présenté(e)</h3>
+                    
+                    <ul>
+                        <li>
+                            <h4>Avant la réunion de famille</h4>
+                    
+                            <ol>
+                                <li>Intéressez-vous à vos beaux-parents
+                                    <p>Demandez à votre compagnon/compagne plus d’informations sur ses parents. Intéressez-vous sincèrement à eux et surtout ne les voyez pas comme des bourreaux. Après tout comprenez-les : s’ils sont méfiants c’est parce qu’ils ne vous connaissent pas et qu’ils ne savent (encore <strong class="exclamation_point">!</strong>) que vous êtes quelqu’un de bien qui permettra à leur enfant de s’épanouir, pas parce qu’ils sont méchants.</p>
+                                </li>
+                                <li>Demandez conseil à votre petit(e) – ami(e)
+                                    <p>S’il y a quelqu’un qui connait bien vos beaux-parents c’est bien leur enfant <strong class="exclamation_point">!</strong> Posez-lui des questions sur eux mais demandez-lui aussi des astuces pour les mettre à l’aise et faire bonne impression.</p>
+                                </li>
+                            </ol>
+                       </li>
+                        
+                        <li> 
+                            <h4>Pendant la réunion de famile</h4>
+                            <ol>
+                                <li>Soyez poli
+                                    <p>L’objectif ? Faire bonne impression. Des petits gestes simples seront les biens venus. Par exemple, ne venez pas les mains vides. Vous n’êtes pas obligé de beaucoup investir, une boisson ou un gâteau suffira. Pour le reste tout dépendra des parents à qui vous avez à faire. En général vouvoyez-les (surtout s’ils sont cérémonieux et vieux jeu), mais demandez tout de même conseil à votre partenaire. </p>
+                                </li>
+                                <li>N’en faites pas trop
+                                    <p>Là encore, même remarque que pour celui/celle qui présente : n’en faîtes pas trop. Rappelez-vous que vous ne passez pas un entretien d’embauche <strong class="exclamation_point">!</strong></p>
+                                </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main> <!--Fin du main-->
+    </body>
+</html>

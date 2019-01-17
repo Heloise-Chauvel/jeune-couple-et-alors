@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head> <!--Début du head-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>Accueil</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+ 
+    </head> <!--Fin du head-->
+    
+    <body onload="initialize(); init();"> <!--Début du body-->
+        <header> <!--Début du header-->
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle"></label>
+                        
+            <nav>
+                <ul>
+                    <li><a href="les_parents.html">Les parents</a></li>
+                    <li><a href="les_occupations.html">Les occupations</a></li>
+                    <li><a href="les_problemes.html">Les problèmes</a></li>
+                    <li><a href="les_engagements.html">Les engagements</a></li>
+                    <li><a href="contact.html">A propos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="safari_only">
+                <a href="index.html"><canvas id="logo_canvas" class="comp_navigateurs" width="413" height="394">Logo</canvas></a>
+
+
+                <!--Une version du canvas pour les version d'IE antérieures à IE10 - puisque IE10 et IE11 ne sont plus pris en charge par les commentaires conditionnels-->   
+                <!--[if IE]>
+                <script type= "text/javascript" src= "js/logo_canvasIE.js"></script>
+                  <canvas id="logo_canvasIE" width="413" height="394">Logo</canvas>  
+                <![endif]-->     
+                </div>  
+        </header> <!--Fin du header-->
+     
+        <main> <!--Début du main-->
+             <aside id="aside">
+                <p>Bonjour et bienvenue sur jeune couple et alors <strong class="exclamation_point">!</strong></p>
+                 <section class="galerie">
+                    <ul>
+                        <li><img alt="jeune couple 1" src="images/jc1.jpg"/></li>
+                        <li><img alt="jeune couple 2" src="images/jc2.jpg"/></li>
+                        <li><img alt="jeune couple 3" src="images/jc3.jpg"/></li>
+                        <li><img alt="jeune couple 4" src="images/jc4.jpg"/></li>
+                        <li><img alt="jeune couple 5" src="images/jc5.jpg"/></li>
+                        <li><img alt="jeune couple 6" src="images/jc6.jpg"/></li>
+                        <li><img alt="jeune couple 7" src="images/jc7.jpg"/></li>
+                        <li><img alt="jeune couple 8" src="images/jc8.jpg"/></li>
+                        <li><img alt="jeune couple 9" src="images/jc9.jpg"/></li>
+                        <li><img alt="jeune couple 10" src="images/jc10.jpg"/></li>
+                        <li><img alt="jeune couple 11" src="images/jc11.jpg"/></li>
+                        <li><img alt="jeune couple 12" src="images/jc12.jpg"/></li>
+                        <li><img alt="jeune couple 13" src="images/jc13.jpg"/></li>
+                        <li><img alt="jeune couple 14" src="images/jc14.jpg"/></li>
+                        <li><img alt="jeune couple 15" src="images/jc15.jpg"/></li>
+                        <li><img alt="jeune couple 16" src="images/jc16.jpg"/></li>
+                        <li><img alt="jeune couple 17" src="images/jc17.jpg"/></li>
+                        <li><img alt="jeune couple 18" src="images/jc18.jpg"/></li>
+                     </ul>
+                 </section>
+            </aside>
+            <div class="col1" id="col1">
+                <section class="section1">            
+                    <img src="images/visuel1.png" alt="Mais qu'est-ce que ça peut être ?" class="img1"/>
+                    <h1>C'est quoi au fait un <strong class="yellow_highlight">jeune couple</strong> <strong class="question_mark">?</strong></h1>
+                    <img src="images/background_blanc.png" alt="fond blanc" class="img2"/>
+                    <video controls id="video_presentation">
+                        <source src="videos/video.mp4">        
+                </section>
+
+                 <section class="section2">              
+                    <img src="images/visuel2.png" alt="Mais où est-ce qu'ils peuvent être ?" class="img1"/>
+                     <h2>Comment nous <strong class="yellow_highlight">trouver</strong> <strong class="question_mark">?</strong></h2>
+                     <p>Et oui nous sommes aussi un jeune couple <strong class="exclamation_point">!</strong></p>
+                     <p>Pour en savoir plus sur nous cliquez <a href="contact.html">ici</a>.</p>
+                     <img src="images/background_blanc2.png" alt="fond blanc" class="img2"/>
+                     <div id="map_canvas">
+                        <p>Veuillez patienter pendant le chargement de la carte...</p>
+                     </div>
+                 </section>
+
+                <section class="section3">              
+                    <img src="images/visuel3.png" alt="Les parents"/>
+                     <h3>Les <strong class="purple_highlight">parents</strong></h2>
+                    <p>On a beau avoir notre vie privée loin du cocon familial, les parents finissent toujours par venir y fouiner...</p>
+                    <section>
+                        <article>
+                            <h4>Les présentations</h4>
+                            <p>Vous le/la connaissez depuis déjà un petit moment, ça commence à devenir sérieux et vous pensez que ce n’est pas une relation comme les autres. Se pose alors la question de la présentation aux parents…</p>
+                            <a href="les_parents.html">VOIR PLUS</a>
+                        </article>
+                        <article>
+                            <h4>Quand ils ne l'acceptent pas</h4>
+                            <p>Quelle que soit la raison, il arrive que votre moitié soit rejetée par vos parents. Son milieu social, sa couleur de peau, ses croyances religieuses, sa situation professionnelle, son âge, son sexe, … tout peut être prétexte au rejet.</p>
+                            <a href="les_parents.html">VOIR PLUS</a>
+                        </article>
+                    </section>
+                 </section>
+
+                <section class="section3">              
+                    <img src="images/visuel4.png" alt="Les idées"/>
+                     <h3>Les <strong class="purple_highlight">occupations</strong></h2>
+                    <p>On a beau s'aimer, des fois même quand on est ensemble on s'ennuie ! Voici donc quelques petites idées de loisirs à pratiquer en couple.</p>
+                    <section>
+                        <article>
+                            <h4>Les jeux qui rapprochent</h4>
+                            <p>Dans cet article j’ai voulu alors cette fois-ci vous proposer des jeux qui auraient pour but premier de rapprocher votre couple, d’apprendre à vous connaître mutuellement et qui auraient pour effet collatéral le divertissement, et non pas le contraire.</p>
+                            <a href="les_occupations.html">VOIR PLUS</a>
+                        </article>
+                        <article>
+                            <h4>Quand on n'a rien sous la main</h4>
+                            <p>Vous êtes tous les deux dans l’appart, contents de vous voir et heureux de partager des moments ensemble. Sauf que ces moments vous les trouvez un peu fades… </p>
+                            <a href="les_occupations.html">VOIR PLUS</a>
+                        </article>                    
+                    </section>
+                 </section>
+
+                <section class="section3">              
+                    <img src="images/visuel5.png" alt="Les problèmes"/>
+                     <h3>Les <strong class="purple_highlight">problèmes</strong></h2>
+                    <p>Peu importe le stade de la relation, on est obligé d'affronter les problèmes à un moment ou un autre. Alors on se calme, on respire un bon coup, on réfléchit en lisant nos articles et ça ira mieux.</p>
+                    <section>
+                        <article>
+                            <h4>Trahison : rupture ou pardon ?</h4>
+                            <p>La trahison est un sentiment très fort qui fait mal. Cette émotion survient lorsque l’on a donné sa confiance à quelqu’un et que celui-ci n’a pas respecté vos valeurs les plus chères.</p>
+                            <a href="les_problemes.htmlmes.html">VOIR PLUS</a>
+                        </article>
+                        <article>
+                            <h4>Je ne supporte plus son caractère !</h4>
+                            <p>Tout beau, tout nouveau, le début d’une relation est presque toujours heureuse. Et puis vous en êtes sûr(e) : c’est celui/celle qu’il vous faut ! Mais voilà plus la relation dure plus vous découvrez des petits défauts que vous n’auriez jamais soupçonné. </p>
+                            <a href="les_problemes.html">VOIR PLUS</a>
+                        </article>
+                    </section>
+                 </section>
+
+                <section class="section3">              
+                    <img src="images/visuel6.png" alt="Les engagements"/>
+                     <h3>Les <strong class="purple_highlight">engagements</strong></h2>
+                    <p>Mariage, maison, bébé ? Il arrive un moment où l'on considère la relation assez mûre pour se lancer. Quoi qu'il en soit il est toujours bon de s'informer avant de prendre des décisions qui peuvent changer une vie.</p>
+                    <section>
+                        <article>
+                            <h4>Est-ce le bon moment ?</h4>
+                            <p>Vous avez des rêves plein les yeux, vous vous voyez aller loin avec lui/elle. Peu importe les projets que vous envisagez, ils impliquent que votre partenaire soit quelqu’un de confiance sur qui vous pouvez compter.</p>
+                            <a href="les_engagements.htl">VOIR PLUS</a>
+                        </article>
+                        <article>
+                            <h4>J'ai peur de lui demander, comment faire ?</h4>
+                            <p>Ça vous trotte dans la tête… Vous aimeriez lui annoncer qu’il/elle compte pour vous à un tel point que vous souhaitez vous engager d’une manière ou d’une autre. Mais vous appréhendez…</p>
+                            <a href="les_engagements.html">VOIR PLUS</a>
+                        </article>
+                    </section>
+                 </section>
+             </div>
+        </main> <!--Fin du main-->
+        
+        <!----------------Javascript------------------->    
+            
+        <!--Je suis vraiment désolée de mettre du javascript dans du HTML directement comme ça... Mais si je le faisais proprement les polices du canvas ne seraient pas reconnues-->
+ 
+<!--Début du script canvas-->     
+        <script> 
+            function init() {
+              var canvas = document.getElementById("logo_canvas");
+              var ctx = canvas.getContext("2d");
+
+              draw(ctx);
+
+              if (!context.setLineDash) {
+            context.setLineDash = function () {}
+        }
+            }
+
+            function draw(ctx) {
+
+              ctx.save(); //garder les fonctionnalités par défaut
+
+              // Polygone
+              ctx.beginPath();
+              ctx.moveTo(307.9, 71.4);
+              ctx.lineTo(279.8, 147.7);
+              ctx.lineTo(199.6, 161.6);
+              ctx.lineTo(147.5, 99.1);
+              ctx.lineTo(175.6, 22.7);
+              ctx.lineTo(255.8, 8.8);
+              ctx.lineTo(307.9, 71.4);
+              ctx.closePath();
+              ctx.fillStyle = "rgb(216, 255, 22)";
+              ctx.fill();
+
+              // Texte : JEUNE COUPLE
+              ctx.font = "12.1px fontLogo1";
+              ctx.fillStyle = "#000";
+              ctx.fillText("JEUNE COUPLE", 161.6, 82.8);
+
+              // Texte : ET ALORS 
+              ctx.font = "22.5px fontLogo2";
+              ctx.fillStyle = "#000";
+              ctx.fillText("ET ALORS !", 198.0, 101.9);
+
+              // Ligne 1 gauche noire
+              ctx.beginPath();
+              ctx.setLineDash([3.2,1]);
+              ctx.moveTo(190.9, 93.4);
+              ctx.lineTo(161.6, 93.4);
+              ctx.fillStyle = "#000";
+              ctx.fill();
+              ctx.lineWidth = 0.5;
+              ctx.stroke();      
+
+              // Ligne 2 droite noire
+              ctx.beginPath();
+              ctx.moveTo(292.4, 73.7);
+              ctx.lineTo(251.8, 73.7);
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore(); // Restaurer les default solid line
+
+              // Ligne 3 gauche blanche
+              ctx.beginPath();
+              ctx.moveTo(190.8, 96.2);
+              ctx.lineTo(162.4, 96.2);
+              ctx.closePath();        
+              ctx.fillStyle = "#fff";
+              ctx.fill();
+              ctx.strokeStyle = "#fff";
+              ctx.stroke();
+
+              // Ligne 4 droite blanche
+              ctx.beginPath();
+              ctx.moveTo(291.7, 76.5);
+              ctx.lineTo(252.6, 76.5);
+              ctx.closePath();
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore();
+            }
+        </script>
+<!--Fin du script canvas--> 
+
+<!--Début du script Google Maps-->
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2TC0OMupOE9nvj-_taUFTqULgS-QGwJc&callback=initMap"></script>
+        <script type="text/javascript" src="js/functions.js"></script>
+<!--Fin du script Google Maps-->
+
+<!--Début du script général-->
+        <script type= "text/javascript" src= "js/js.js"></script>
+<!--Fin du script général-->
+    </body> <!--Fin du body-->
+    
+</html>

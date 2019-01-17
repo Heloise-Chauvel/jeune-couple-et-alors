@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head> <!--Début du head-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>Les problèmes</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Début du script canvas-->     
+        <script> 
+            function init() {
+
+              var canvas = document.getElementById("logo_canvas");
+              var ctx = canvas.getContext("2d");
+
+              draw(ctx);
+
+              if (!context.setLineDash) {
+            context.setLineDash = function () {}
+        }
+            }
+
+            function draw(ctx) {
+
+              ctx.save(); //garder les fonctionnalités par défaut
+
+              // Polygone
+              ctx.beginPath();
+              ctx.moveTo(307.9, 71.4);
+              ctx.lineTo(279.8, 147.7);
+              ctx.lineTo(199.6, 161.6);
+              ctx.lineTo(147.5, 99.1);
+              ctx.lineTo(175.6, 22.7);
+              ctx.lineTo(255.8, 8.8);
+              ctx.lineTo(307.9, 71.4);
+              ctx.closePath();
+              ctx.fillStyle = "rgb(216, 255, 22)";
+              ctx.fill();
+
+              // Texte : JEUNE COUPLE
+              ctx.font = "12.1px fontLogo1";
+              ctx.fillStyle = "#000";
+              ctx.fillText("JEUNE COUPLE", 161.6, 82.8);
+
+              // Texte : ET ALORS 
+              ctx.font = "22.5px fontLogo2";
+              ctx.fillStyle = "#000";
+              ctx.fillText("ET ALORS !", 198.0, 101.9);
+
+              // Ligne 1 gauche noire
+              ctx.beginPath();
+              ctx.setLineDash([3.2,1]);
+              ctx.moveTo(190.9, 93.4);
+              ctx.lineTo(161.6, 93.4);
+              ctx.fillStyle = "#000";
+              ctx.fill();
+              ctx.lineWidth = 0.5;
+              ctx.stroke();      
+
+              // Ligne 2 droite noire
+              ctx.beginPath();
+              ctx.moveTo(292.4, 73.7);
+              ctx.lineTo(251.8, 73.7);
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore(); // Restaurer les default solid line
+
+              // Ligne 3 gauche blanche
+              ctx.beginPath();
+              ctx.moveTo(190.8, 96.2);
+              ctx.lineTo(162.4, 96.2);
+              ctx.closePath();        
+              ctx.fillStyle = "#fff";
+              ctx.fill();
+              ctx.strokeStyle = "#fff";
+              ctx.stroke();
+
+              // Ligne 4 droite blanche
+              ctx.beginPath();
+              ctx.moveTo(291.7, 76.5);
+              ctx.lineTo(252.6, 76.5);
+              ctx.closePath();
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore();
+            }
+        </script>
+<!--Fin du script canvas-->
+    </head> <!--Fin du head-->
+    
+    <body onload="init();"> <!--Début du body-->
+        <header> <!--Début du header-->
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle"></label>
+            <!--<p id="burger" class="burger"></p>-->
+            
+            <nav>
+                <ul>
+                    <li><a href="les_parents.html">Les parents</a></li>
+                    <li><a href="les_occupations.html">Les occupations</a></li>
+                    <li><a href="les_problemes.html">Les problèmes</a></li>
+                    <li><a href="les_engagements.html">Les engagements</a></li>
+                    <li><a href="contact.html">A propos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="safari_only">
+                <a href="index.html"><canvas id="logo_canvas" class="comp_navigateurs" width="413" height="394">Logo</canvas></a>
+
+
+                <!--Une version du canvas pour les version d'IE antérieures à IE10 - puisque IE10 et IE11 ne sont plus pris en charge par les commentaires conditionnels-->   
+                <!--[if IE]>
+                <script type= "text/javascript" src= "js/logo_canvasIE.js"></script>
+                  <canvas id="logo_canvasIE" width="413" height="394">Logo</canvas>  
+                <![endif]-->     
+                </div>  
+        </header> <!--Fin du header-->
+        
+        <main> <!--Début du main-->
+            <section class="sectionprt">
+                <img src="images/visuel5.png" alt="Les problèmes"/>
+                <h1>Les problemes</h1>
+            </section>
+            
+            <section class="sectionprt sectionpb">
+                <h2>Trahison : rupture ou pardon ?</h2>
+                <article>
+                    <h3>Pourquoi se sent-on trahis ?</h3>
+                    <p>La trahison est un sentiment très fort qui fait mal. Cette émotion survient lorsque l’on a donné sa confiance à quelqu’un et que celui-ci n’a pas respecté vos valeurs les plus chères. Souvent par trahison on entend adultère, et effectivement s’en est une dans la plupart des situations. Mais sachez que chez certains couple (on pense à nos amis libertins), cette pratique n’est pas vue comme telle car elle fait partie des valeurs qui ont été construites avec leur relation. Ainsi la trahison est un terme qui englobe des actes différents en fonction des couples. Personnellement, les trahisons qui seraient les plus fortes pour moi seraient la violence conjugale (physique ou morale) et l’irrespect (c’est un terme très général qui pour moi regroupe le mensonge et l’humiliation). Evidemment d’autres trahisons pourraient me mener à la rupture mais ce sont bien ces deux-là qui me feraient le plus de mal.</p>
+                    
+                    <h3>La difficulté de prendre une décision.</h3>
+                    <p>C’est donc une très mauvaise idée de comparer un acte qui a eu lieu au sein de son propre couple avec un autre similaire qui est apparu dans un autre. Tout dépend de vos valeurs. Je peux quand même vous conseiller de procéder par étape :</p>
+                    
+                    <ol>
+                        <li>Bien réfléchir si ce qui s’est passé est vraiment inacceptable pour vous ou non.</li>
+                        <li>Discuter avec votre conjoint de ce qu’il s’est passé. La communication est la clé, il ne faut surtout pas négliger cette étape sauf dans les cas extrêmes (si vous êtes en danger avec lui/elle notamment, à ce moment il vaut mieux éviter les contacts).</li>
+                        <li>Comparer seul(e) votre point de vue et le sien et voir s’il y a moyen de faire des concessions ou non.</li>
+                        <li>Expliquer sa décision.</li>
+                    </ol>
+                    
+                    <h3>Des exemples pour vous guider</h3>
+                    <p>Ces étapes sont vraiment incontournables. Toutefois je sais à quel point il est dur de se faire une opinion seul(e), aussi j’ai trouvé intéressant de vous faire un tableau pour vous suggérer des réactions réfléchies. Evidemment même si j’ai essayé de constituer ce récapitulatif de la manière la plus objective possible, il se peut que certaines choses ne soient pas à leur place pour vous. Sachez donc que ce tableau n’a pas pour vocation d’être la vérité absolue, il est surtout là pour vous inviter à la réflexion et vous encourager, pourquoi pas, à faire le vôtre en y intégrant des situations plus personnelles.</p>
+                    <table>
+                       <tr>
+                           <td>Raisons qui invitent au pardon</td>
+                           <td>Raisons qui invitent à la rupture</td>
+                       </tr>
+                       <tr>
+                           <td>
+                               <ul>
+                                    <li>Vous n’aviez pas explicitement posé vos valeurs</li>
+                                    <li>L’acte n’a pas été fait délibérément, il a été conditionné </li>
+                                   <li>Votre conjoint s’en veut sincèrement et promet de faire attention et d’évoluer si votre histoire continue</li>
+                                   <li>Votre copain/copine vous offre une compensation qui vous convient pour réparer son acte</li>
+                               </ul>
+                           </td>
+                           <td>
+                                <ul>
+                                    <li>Il ne s’agit pas de la première trahison, elles s’enchaînent depuis un moment</li>
+                                    <li>Il y a eu violences conjugales</li>
+                                   <li>L’acte vous a profondément bouleversé et vous ne pensez qu’il est possible de pouvoir continuer à vivre avec lui/elle sereinement</li>
+                                   <li>Si vous revenez, vous ne le faites que pour lui/elle, vous agissez par pitié</li>
+                                    <li>Votre conjoint ne compte pas changer</li>
+                               </ul>
+                           </td>
+                       </tr>
+                    </table>
+                </article>
+            </section>
+            
+            <section class="sectionprt sectionpb">
+                <h2>Je ne supporte plus son caractère <strong class="exclamation_point">!</strong></h2>
+                <article>
+                    <p>Tout beau, tout nouveau, le début d’une relation est presque toujours heureuse. Et puis vous en êtes sûr(e) : c’est celui/celle qu’il vous faut <strong class="exclamation_point">!</strong> Mais voilà plus la relation dure plus vous découvrez des petits défauts que vous n’auriez jamais soupçonné. Désordonné(e), coureur de jupons (ou de caleçons <strong class="exclamation_point">!</strong>), fainéant(e), toujours avec ses amis, ou au contraire maniaque, jaloux(se), qui veut toujours en faire trop ou solitaire, tout cela peut être des défauts que vous avez découvert chez lui/elle. Parfois on arrive à passer outre de ces traits de caractère, mais d’autres fois… On n’y arrive plus <strong class="exclamation_point">!</strong> Comme d’habitude je vais essayer de vous donner des conseils pour essayer de surmonter ce problème mais cette fois-ci sous forme d’un parcours en plusieurs étapes.</p>
+                    
+                    <ol>
+                        <li>Comprendre comment on est arrivé à ne voir que les défauts
+                            <p>Si à un moment donné vous trouvez que ses qualités ne compensent plus ses défauts c’est qu’il s’est passé quelque chose à un moment donné. Vous ne vous voyez plus autant ? Vous n’avez plus de piment comme au début ? Vous avez des problèmes d’argent ? Ou alors est-ce qu’un défaut de votre partenaire un peu trop puissant ne vous gâche pas tout simplement votre vie de couple ? Quoi qu’il en soit vous devez analyser ce qu’il ne va pas pour pouvoir mieux affronter cette situation..</p>
+                        </li>
+                        <li>Lui en parler
+                            <p>Je pense que pour ceux qui ont l’habitude de lire mes articles vous vous êtes rendus compte que je prône toujours la communication au sein du couple. Et pour cause, c’est cela qui m’a permis de maintenir une relation saine avec mon copain depuis trois ans. Aussi vous ne serez pas surpris si je vous dis qu’après avoir analysé les raisons pour lesquelles les défauts de votre partenaire vous gênent autant, il faut absolument lui en parler. Dites-lui clairement ce qui vous dérange. Peut-être que vous aurez la chance que cette discussion fasse changer les choses radicalement. Toutefois si ce n’est pas le cas ne vous affolez pas, c’est le premier pas vers une solution, bien que de loin la plus importante, ce n’est pas la seule étape qu’il faudra franchir pour retrouver la paisibilité d’antan.</p>
+                        </li>
+                        <li>Voir ses propres défauts
+                            <p>Lorsque vous discuterez avec votre copain/copine, il faut vous rendre compte que celui-ci aura aussi son mot à dire. Peut-être que lui/elle aussi trouve que vous ne mettez pas du vôtre dans la relation, il faudra alors que vous preniez assez de recul pour l’accepter et vous remettre en question. Si vous ne faites pas cette démarche, c’est sûr que ce sera un dialogue de sourd et que vous ne pourrez pas sauver votre relation.</p>
+                        </li>
+                        <li>Comparer le caractère de votre partenaire avec celui d’autres personnes que vous avez plutôt bien connues
+                            <p>A présent, maintenant que vous y voyez plus clair et que vous avez toutes les cartes en main pour prendre une décision, je vous propose de comparer les défauts de votre conjoint avec ceux d’autres personnes. Il faut que vous connaissiez ces personnes assez bien, sinon la comparaison ne sera pas équitable (vous êtes le premier à savoir que lorsque l’on connait quelqu’un uniquement en surface, on ne voit que ses qualités, c’est ce qui vous est arrivé avec votre copain/copine au début). Ces personnes peuvent faire partie de votre famille, des amis et pourquoi pas des ex. Imaginez-vous vivre avec cette personne toute votre vie (faites preuve d’un maximum d’objectivité), devinez quelles réactions elle aurait pu avoir en choisissant le pire scénario. Plongez-vous vraiment dans cette ambiance, comme si vous y étiez pour de bon. Il faut que vous ressentiez à peu près la même chose que ce que vous ressentez avec votre compagnon/compagne actuellement, sinon c’est que vous avez mal imaginé. Puis, une fois que vous vous êtes bien imprégné de cette ambiance essayez de vous poser cette question : « Est-ce que vraiment le caractère de celui/celle que j’ai aimé est pire, pareil ou mieux que ça ? ». La réponse à cette question pourra ensuite vous guider dans votre choix. Il est vrai que cette technique fonctionne chez ceux qui n’ont pas trop de mal à imaginer, si ce n’est pas le cas il faudra que vous trouviez une autre technique pour comparer ce que vous vivez actuellement à autre chose. Pourquoi pas un break qui vous permette d’expérimenter d’autres choses ? Le but de cette étape et de savoir si le dicton « on croit toujours que l’herbe est plus verte ailleurs » est vrai ou non pour votre situation.</p>
+                        </li>
+                        <li>Si vraiment vous ne supportez plus ce caractère, songez à la rupture
+                            <p>Quand ça ne va pas ben ça ne va pas, il est parfois mieux d’arrêter là plutôt que de se forcer.</p>
+                        </li>
+                        <li>Si vous acceptez finalement ses défauts, aidez-le/la
+                            <p>Vous voyez qu’il est possible de sortir de cette impasse si tous les deux faites des efforts. Alors faites vraiment ces efforts, aidez votre conjoint. Il que votre relation ressorte de cette épreuve encore plus forte.</p>
+                        </li>
+                    </ol>
+                    
+                </article>
+            </section>
+        </main> <!--Fin du main-->
+    </body>
+</html>

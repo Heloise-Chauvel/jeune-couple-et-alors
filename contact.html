@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head> <!--Début du head-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <title>Les engagements</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Début du script canvas-->     
+        <script> 
+            function init() {
+
+              var canvas = document.getElementById("logo_canvas");
+              var ctx = canvas.getContext("2d");
+
+              draw(ctx);
+
+              if (!context.setLineDash) {
+            context.setLineDash = function () {}
+        }
+            }
+
+            function draw(ctx) {
+
+              ctx.save(); //garder les fonctionnalités par défaut
+
+              // Polygone
+              ctx.beginPath();
+              ctx.moveTo(307.9, 71.4);
+              ctx.lineTo(279.8, 147.7);
+              ctx.lineTo(199.6, 161.6);
+              ctx.lineTo(147.5, 99.1);
+              ctx.lineTo(175.6, 22.7);
+              ctx.lineTo(255.8, 8.8);
+              ctx.lineTo(307.9, 71.4);
+              ctx.closePath();
+              ctx.fillStyle = "rgb(216, 255, 22)";
+              ctx.fill();
+
+              // Texte : JEUNE COUPLE
+              ctx.font = "12.1px fontLogo1";
+              ctx.fillStyle = "#000";
+              ctx.fillText("JEUNE COUPLE", 161.6, 82.8);
+
+              // Texte : ET ALORS 
+              ctx.font = "22.5px fontLogo2";
+              ctx.fillStyle = "#000";
+              ctx.fillText("ET ALORS !", 198.0, 101.9);
+
+              // Ligne 1 gauche noire
+              ctx.beginPath();
+              ctx.setLineDash([3.2,1]);
+              ctx.moveTo(190.9, 93.4);
+              ctx.lineTo(161.6, 93.4);
+              ctx.fillStyle = "#000";
+              ctx.fill();
+              ctx.lineWidth = 0.5;
+              ctx.stroke();      
+
+              // Ligne 2 droite noire
+              ctx.beginPath();
+              ctx.moveTo(292.4, 73.7);
+              ctx.lineTo(251.8, 73.7);
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore(); // Restaurer les default solid line
+
+              // Ligne 3 gauche blanche
+              ctx.beginPath();
+              ctx.moveTo(190.8, 96.2);
+              ctx.lineTo(162.4, 96.2);
+              ctx.closePath();        
+              ctx.fillStyle = "#fff";
+              ctx.fill();
+              ctx.strokeStyle = "#fff";
+              ctx.stroke();
+
+              // Ligne 4 droite blanche
+              ctx.beginPath();
+              ctx.moveTo(291.7, 76.5);
+              ctx.lineTo(252.6, 76.5);
+              ctx.closePath();
+              ctx.fill();
+              ctx.stroke();
+              ctx.restore();
+            }
+        </script>
+<!--Fin du script canvas-->
+    </head> <!--Fin du head-->
+    
+    <body onload="init();"> <!--Début du body-->
+        <header> <!--Début du header-->
+            <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+            <label for="drawer-toggle"></label>
+            <!--<p id="burger" class="burger"></p>-->
+            
+            <nav>
+                <ul>
+                    <li><a href="les_parents.html">Les parents</a></li>
+                    <li><a href="les_occupations.html">Les occupations</a></li>
+                    <li><a href="les_problemes.html">Les problèmes</a></li>
+                    <li><a href="les_engagements.html">Les engagements</a></li>
+                    <li><a href="contact.html">A propos</a></li>
+                </ul>
+            </nav>
+            
+            <div class="safari_only">
+                <a href="index.html"><canvas id="logo_canvas" class="comp_navigateurs" width="413" height="394">Logo</canvas></a>
+
+
+                <!--Une version du canvas pour les version d'IE antérieures à IE10 - puisque IE10 et IE11 ne sont plus pris en charge par les commentaires conditionnels-->   
+                <!--[if IE]>
+                <script type= "text/javascript" src= "js/logo_canvasIE.js"></script>
+                  <canvas id="logo_canvasIE" width="413" height="394">Logo</canvas>  
+                <![endif]-->     
+                </div>  
+        </header> <!--Fin du header-->
+        
+        <main> <!--Début du main-->
+            <section class="sectionprt sectionap">
+                <img src="images/visuel2.png" alt="Contact"/>
+                <h1>A propos</h1>
+            </section>
+            
+            <section class="sectionprt sectionap">
+               <h2>Qui sommes-nous ?</h2>
+                
+                <p>Moi c'est Héloïse, je suis en charge du développement web de ce site ainsi que de la rédaction des articles. Mon copain c'est Yohan, il m'aide de temps en temps à agrémenter ce site de petits visuels sympathiqques, car pour lui l'ar graphique c'est une passion. Je suis actuellement étudiante en informatique mais j'ai également un deug en Langues Etrangères Appliquées et une licence professionnelle en webmarketing et communication web. Yohan lui finit actuellement sa Mise à Niveau en Arts Appliqués et attend les réponses des établissements à ses candidatures en BTS design grapique.</p>
+            
+            </section>
+            
+            <section class="sectionprt sectionap">
+                <h2>Pourquoi un tel projet ?</h2>
+                
+                <p>Ce site est à la base un travail scolaire afin de valider mes compétences en développement de sites web statiques. C'est pour cela que vous retrouverez entre autres un trajet Google Maps, une vidéo et un formlaire. Toutefois s'il s'agit avant tout d'un projet universitaire, le sujet choisi est tout à fait personnel. Avec Yohan nous cherchions un sujet original qui nous plaise tous les deux. C'est ainsi qu'est né "Jeune couple et alors ?" <strong class="exclamation_point">!</strong> Le fait d'avoir créé ce site m'a donné envie de le mettre en ligne, ainsi après l'avoir eposé à mes professeurs, je compte faire les démarches pour qu'il soit accessible par les internautes.</p>
+            </section>    
+            
+            <section class="sectionprt sectionap">
+                <h2>Contact</h2>
+                
+                <p>N'hésitez pas à nous laissez un message !</p>
+                
+                <form action="formulaire" method="post">
+                    <div>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" />
+                    </div>
+                    <div>
+                        <label for="courriel">Courriel</label>
+                        <input type="email" id="courriel" />
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+                </form>
+            </section>
+            
+                        
+        </main> <!--Fin du main-->
+    </body>
+</html>
